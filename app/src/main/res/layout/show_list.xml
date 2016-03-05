@@ -4,8 +4,32 @@
     android:layout_height="wrap_content"
     android:background="@drawable/list_selector"
     android:orientation="horizontal"
-    android:padding="5dp">
+    android:padding="20dp">
 
+    <TextView
+        android:id="@+id/venue_name"
+        android:text="North Charleston Coliseum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/venue_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue_name"
+        android:text="Charleston, SC"
+        android:paddingTop="2dp"/>
+
+    <TextView
+        android:id="@+id/show_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/16/2010"
+        android:layout_below="@id/venue_name"
+        android:layout_toRightOf="@id/venue_location"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"/>
 
 </RelativeLayout>

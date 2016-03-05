@@ -10,9 +10,17 @@
         android:id="@+id/year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1993"
+        android:text="2010"
         android:textSize="25sp"
         android:textColor="#2b2b2b"
         android:paddingLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/arrow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_media_play"/>
 
 </RelativeLayout>
