@@ -17,6 +17,7 @@ public class Year {
     }
 
     public Year(int year) {
+        shows = new ArrayList<>();
         this.year = year;
     }
 
@@ -34,5 +35,9 @@ public class Year {
 
     public void setShows(ArrayList<Show> shows) {
         this.shows = shows;
+    }
+
+    public void addShow(Show show) {
+        shows.add(show);
     }
 }
