@@ -1,4 +1,6 @@
-package com.theironyard.androidpracticeapp;
+package com.theironyard.androidpracticeapp.entities;
+
+import com.theironyard.androidpracticeapp.entities.Show;
 
 import java.util.ArrayList;
 
@@ -9,6 +11,10 @@ public class Year {
 
     private int year;
     private ArrayList<Show> shows;
+
+    public Year() {
+
+    }
 
     public Year(int year) {
         this.year = year;

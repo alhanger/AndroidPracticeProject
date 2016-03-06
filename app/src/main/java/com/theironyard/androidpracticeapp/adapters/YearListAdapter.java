@@ -1,12 +1,14 @@
-package com.theironyard.androidpracticeapp;
+package com.theironyard.androidpracticeapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.theironyard.androidpracticeapp.R;
+import com.theironyard.androidpracticeapp.entities.Year;
 
 /**
  * Created by alhanger on 3/6/16.
@@ -14,10 +16,10 @@ import java.util.ArrayList;
 public class YearListAdapter extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<Year> years;
+    private Year[] years;
     private LayoutInflater inflater = null;
 
-    public YearListAdapter(Context context, ArrayList<Year> data) {
+    public YearListAdapter(Context context, Year[] data) {
         mContext = context;
         years = data;
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
@@ -26,7 +28,7 @@ public class YearListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return years.size();
+        return years.length;
     }
 
     @Override
@@ -43,6 +45,16 @@ public class YearListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View view = convertView;
+
+        if (convertView == null) {
+            view = inflater.inflate(R.layout.year_list, null);
+
+            TextView year = (TextView) view.findViewById(R.id.year);
+
+            Year mYear = new Year();
+
+            year.setText(mYear.toString());
+        }
 
         return view;
     }

@@ -1,4 +1,4 @@
-package com.theironyard.androidpracticeapp;
+package com.theironyard.androidpracticeapp.entities;
 
 /**
  * Created by alhanger on 3/5/16.
