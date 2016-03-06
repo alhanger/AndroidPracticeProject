@@ -1,5 +1,7 @@
 package com.theironyard.androidpracticeapp.activities;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +13,7 @@ import com.theironyard.androidpracticeapp.adapters.YearListAdapter;
 import com.theironyard.androidpracticeapp.entities.Show;
 import com.theironyard.androidpracticeapp.entities.Year;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private ListView listView;
     private YearListAdapter yearListAdapter;
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent showIntent = new Intent(MainActivity.this, ShowActivity.this);
 
             }
         });
