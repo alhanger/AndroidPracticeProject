@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
+import com.theironyard.androidpracticeapp.R;
 import com.theironyard.androidpracticeapp.entities.Show;
 
 
@@ -45,7 +47,17 @@ public class ShowListAdapter extends BaseAdapter {
         View view = convertView;
 
         if (convertView == null) {
+            view = inflater.inflate(R.layout.show_list, null);
 
+            TextView venueName = (TextView) view.findViewById(R.id.venue_name);
+            TextView venueLocation = (TextView) view.findViewById(R.id.venue_location);
+            TextView showDate = (TextView) view.findViewById(R.id.show_date);
+
+            Show mShow = new Show();
+
+            venueName.setText(mShow.getVenue());
+            venueLocation.setText(mShow.getVenueLocation());
+            showDate.setText(mShow.getDate());
         }
 
         return view;

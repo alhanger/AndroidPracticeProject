@@ -15,6 +15,10 @@ public class Show {
         this.venueLocation = venueLocation;
     }
 
+    public Show() {
+
+    }
+
     public String getVenue() {
         return venue;
     }
