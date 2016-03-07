@@ -67,8 +67,9 @@ public class MainActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent showIntent = new Intent(MainActivity.this, ShowActivity.this);
-
+                Intent showIntent = new Intent(MainActivity.this, ShowActivity.class);
+                showIntent.putExtra("showInfo", years[position].getShows());
+                startActivity(showIntent);
             }
         });
     }
