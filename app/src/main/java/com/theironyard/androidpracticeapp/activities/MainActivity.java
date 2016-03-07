@@ -34,28 +34,30 @@ public class MainActivity extends Activity {
 
         final Year[] years = new Year[] {nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen};
 
-        final Show miami = new Show("American Airlines Arena", "12/31/2009");
+        final Show miami = new Show("American Airlines Arena", "12/30/2009", "Miami, FL");
+        final Show miami2 = new Show("American Airlines Arena", "12/31/2009", "Miami, FL");
         nine.addShow(miami);
+        nine.addShow(miami2);
 
-        final Show charleston = new Show("North Charleston Coliseum", "10/16/2010");
+        final Show charleston = new Show("North Charleston Coliseum", "10/16/2010", "Charleston, SC");
         ten.addShow(charleston);
 
-        final Show atlanta = new Show("Verizon Wireless Amphitheatre", "6/14/2011");
+        final Show atlanta = new Show("Verizon Wireless Amphitheatre", "6/14/2011", "Alpharetta, GA");
         eleven.addShow(atlanta);
 
-        final Show colorado = new Show("Dick's Sporting Goods Park", "8/31/2012");
+        final Show colorado = new Show("Dick's Sporting Goods Park", "8/31/2012", "Denver, CO");
         twelve.addShow(colorado);
 
-        final Show hampton = new Show("Hampton Coliseum", "10/18/2013");
+        final Show hampton = new Show("Hampton Coliseum", "10/18/2013", "Hampton, VA");
         thirteen.addShow(hampton);
 
-        final Show orangeBeach = new Show("The Wharf", "8/1/2014");
+        final Show orangeBeach = new Show("The Wharf", "8/1/2014", "Orange Beach, AL");
         fourteen.addShow(orangeBeach);
 
-        final Show magnaball = new Show("Watkins Glen International", "8/23/2015");
+        final Show magnaball = new Show("Watkins Glen International", "8/23/2015", "Watkins Glen, NY");
         fifteen.addShow(magnaball);
 
-        final Show mexico = new Show("Riveria Maya", "1/15/2016");
+        final Show mexico = new Show("Riveria Maya", "1/15/2016", "Riveria Maya, Mexico");
         sixteen.addShow(mexico);
 
 

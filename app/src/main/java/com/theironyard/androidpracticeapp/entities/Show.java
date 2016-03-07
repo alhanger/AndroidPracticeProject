@@ -7,10 +7,12 @@ public class Show {
 
     private String venue;
     private String date;
+    private String venueLocation;
 
-    public Show(String venue, String date) {
+    public Show(String venue, String date, String venueLocation) {
         this.venue = venue;
         this.date = date;
+        this.venueLocation = venueLocation;
     }
 
     public String getVenue() {
@@ -27,5 +29,13 @@ public class Show {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getVenueLocation() {
+        return venueLocation;
+    }
+
+    public void setVenueLocation(String venueLocation) {
+        this.venueLocation = venueLocation;
     }
 }

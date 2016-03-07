@@ -3,10 +3,13 @@ package com.theironyard.androidpracticeapp.activities;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import com.theironyard.androidpracticeapp.R;
 
 public class ShowActivity extends Activity {
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
