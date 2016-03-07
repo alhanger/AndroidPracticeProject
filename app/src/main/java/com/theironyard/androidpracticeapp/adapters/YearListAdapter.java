@@ -51,9 +51,10 @@ public class YearListAdapter extends BaseAdapter {
 
             TextView year = (TextView) view.findViewById(R.id.year);
 
-            Year mYear = new Year();
+            Year mYear = years[position];
+            String stringYear = String.valueOf(mYear.getYear());
 
-            year.setText(mYear.toString());
+            year.setText(stringYear);
         }
 
         return view;
